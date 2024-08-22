@@ -1,12 +1,13 @@
 {
   "name": "brights-auth",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "jwtApp.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "DJL",
   "license": "ISC",
   "description": "",
   "dependencies": {
