@@ -1,9 +1,9 @@
 {
-  "name": "brights-auth",
+  "name": "brights-auth-exercise",
   "version": "1.0.0",
-  "main": "jwtApp.js",
+  "main": "api/jwtApp.js",
   "scripts": {
-    "start": "node jwtApp.js",
+    "start": "node api/jwtApp.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
