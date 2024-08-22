@@ -6,12 +6,11 @@ const cors = require('cors');
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
 // Hardcoded credentials
-const jwtSecret = "your_secret_key";
+const jwtSecret = process.env.JWT_SECRET || "default_secret_key"; // Use the environment variable, fallback to default if not set
 const validUsername = "user123";
 const validPasswordHash = bcrypt.hashSync("pass123", 8);
 
