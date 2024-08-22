@@ -14,6 +14,10 @@ const jwtSecret = process.env.JWT_SECRET || "default_secret_key"; // Use the env
 const validUsername = "user123";
 const validPasswordHash = bcrypt.hashSync("pass123", 8);
 
+app.get('/', (req, res) => {
+    res.send("Please log in by sending a POST request to /login with your username and password.");
+});
+
 // Authentication route
 app.post('/api/login', (req, res) => {
     const { username, password } = req.body;
