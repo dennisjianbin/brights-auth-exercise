@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 // Authentication route
-app.post('/api/login', (req, res) => {
+app.get('/api/login', (req, res) => {
     const { username, password } = req.body;
     if (username === validUsername && bcrypt.compareSync(password, validPasswordHash)) {
         const token = jwt.sign({ username }, jwtSecret, { expiresIn: '1h' });
